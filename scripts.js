@@ -2,8 +2,7 @@ $(document).ready(function() {
     //create empty array
     var formArray = [];
 
-    $('.btn').click(function(event) {
-        event.preventDefault();
+    $('#something').click(function(event) {
         var formVal = {};
         formVal.prodkey = $('#firstProdName').attr('name');
         formVal.prodvalue = $('#firstProdName').val();
@@ -33,8 +32,6 @@ $(document).ready(function() {
         formArray.push(thirdFormVal);
 
         localStorage.setItem(formArray, JSON.stringify(formArray));
-
-        window.location.href = 'comparison.html';
         
         console.table(formArray);
     })
