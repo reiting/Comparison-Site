@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
 </head>
@@ -24,57 +22,56 @@
         </div>
     </header>
     <main>
+            <form action="" id="productForm">
         <div class="container first-product">
-            <form action="" class="product-info-input">
+            
                 <h2>First Product</h2>
                 <div class="form-group">
-                    <label for="Headphone Name">Product Name</label>
-                    <input type="text" class="form-control" id="first-product-name">
+                    <label for="firstProdName">Product Name</label>
+                    <input type="text" name="name" class="stored form-control" id="firstProdName" required>
                 </div>
                 <div class="form-group">
-                    <label for="description">Description</label>
-                    <input type="text" class="form-control" id="first-product-description">
+                    <label for="firstProdDesc">Description</label>
+                    <input type="text" name="description" class="stored form-control" id="firstProdDesc" required>
                 </div>
                 <div class="form-group">
-                    <label for="price">Price</label>
-                    <input type="text" class="form-control" id="first-product-price">
+                    <label for="firstProdPrice">Price</label>
+                    <input type="text" name="price" class="stored form-control" id="firstProdPrice" required>
                 </div>
         </div>
         <div class="container second-product">
             <h2>Second Product</h2>
             <div class="form-group">
-                <label for="Headphone Name">Product Name</label>
-                <input type="text" class="form-control" id="second-product-name">
+                <label for="secondProdName">Product Name</label>
+                <input type="text" name="name" class="stored form-control" id="secondProdName" required>
             </div>
             <div class="form-group">
-                <label for="description">Description</label>
-                <input type="text" class="form-control" id="second-product-description">
+                <label for="secondProdDesc">Description</label>
+                <input type="text" name="description" class="stored form-control" id="secondProdDesc" required>
             </div>
             <div class="form-group">
-                <label for="price">Price</label>
-                <input type="text" class="form-control" id="second-product-price">
+                <label for="secondProdPrice">Price</label>
+                <input type="text" name="price" class="stored form-control" id="secondProdPrice" required>
             </div>
         </div>
         <div class="container third-product">
             <h2>Third Product</h2>
             <div class="form-group">
-                <label for="Headphone Name">Product Name</label>
-                <input type="text" class="form-control" id="third-product-name">
+                <label for="thirdProdName">Product Name</label>
+                <input type="text" name="name" class="stored form-control" id="thirdProdName" required>
             </div>
             <div class="form-group">
-                <label for="description">Description</label>
-                <input type="text" class="form-control" id="third-product-description">
+                <label for="thirdProdDesc">Description</label>
+                <input type="text" name="description" class="stored form-control" id="thirdProdDesc" required>
             </div>
             <div class="form-group">
-                <label for="price">Price</label>
-                <input type="text" class="form-control" id="third-product-price">
+                <label for="thirdProdPrice">Price</label>
+                <input type="text" name="price" class="stored form-control" id="thirdProdPrice" required>
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </div>
         </form>
     </main>
-
-    <div id="results"></div>
 </body>
 
 </html>
