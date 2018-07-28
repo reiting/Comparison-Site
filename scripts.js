@@ -2,7 +2,7 @@ $(document).ready(function() {
     //create empty array
     var formArray = [];
     if ($('body').hasClass('one')) {
-    $('#something').click(function(event) {
+    $('#submitButton').click(function() {
         var formVal = {};
         formVal.prodkey = $('#firstProdName').attr('name');
         formVal.prodvalue = $('#firstProdName').val();
