@@ -31,6 +31,10 @@ $(document).ready(function() {
         formArray.push(formVal);
         formArray.push(secondFormVal);
         formArray.push(thirdFormVal);
+
+        localStorage.setItem(formArray, JSON.stringify(formArray));
+
+        window.location.href = 'comparison.html';
         
         console.table(formArray);
     })
