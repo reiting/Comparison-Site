@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
-        <head>
-        <title>Headphones Comparison</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="comparison.css">
-        <script src="scripts.js"></script>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <h1>Comparison Page</h1>
-            <p>See chart to review options</p>
-            <div class="row">
-                <div class="col-md-4">Name</div>
-                <div class="col-md-4">Desc</div>
-                <div class="col-md-4">Price</div>
-            </div>
-            <div class="row">
-                    <div class="col-md-4">Name</div>
-                    <div class="col-md-4">Desc</div>
-                    <div class="col-md-4">Price</div>
-                </div>
-                <div class="row">
-                        <div class="col-md-4">Name</div>
-                        <div class="col-md-4">Desc</div>
-                        <div class="col-md-4">Price</div>
-                    </div>
+
+<head>
+    <title>Headphones Comparison</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="comparison.css">
+    <script src="comparison.js"></script>
+</head>
+
+<body class="two">
+    <div class="container-fluid">
+        <h1>Comparison Page</h1>
+        <p>See chart to review options</p>
+        <div class="row">
+            <div class="col-md-4">Product 1</div>
+            <div class="col-md-4">Product 2</div>
+            <div class="col-md-4">Product 3</div>
         </div>
-    </body>
+        <div class="row">
+            <div class="col-md-4" id="name1"></div>
+            <div class="col-md-4" id="name2"></div>
+            <div class="col-md-4" id="name3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" id="desc1"></div>
+            <div class="col-md-4" id="desc2"></div>
+            <div class="col-md-4" id="desc3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" id="price1"></div>
+            <div class="col-md-4" id="price2"></div>
+            <div class="col-md-4" id="price3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="result">RESULT</div>
+        </div>
+    </div>
+</body>
+
 </html>

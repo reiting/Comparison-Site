@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //create empty array
     var formArray = [];
-
+    if ($('body').hasClass('one')) {
     $('#something').click(function(event) {
         var formVal = {};
         formVal.prodkey = $('#firstProdName').attr('name');
@@ -31,10 +31,16 @@ $(document).ready(function() {
         formArray.push(secondFormVal);
         formArray.push(thirdFormVal);
 
-        localStorage.setItem(formArray, JSON.stringify(formArray));
+        localStorage.setItem("formArray", JSON.stringify(formArray));
         
-        console.table(formArray);
+        
+    //click
     })
+} else if ($('body').hasClass('two')) {
+    var myStorage = window.localStorage;
+    //$('#result').text(myStorage[0].prodkey.val());
+    //console.log(myStorage.getItem('formArray'));
 
-   
+}
+    //final
 })

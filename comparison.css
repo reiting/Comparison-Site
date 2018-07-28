@@ -1,0 +1,11 @@
+.row {
+    border-style: solid;
+}
+
+.col-md-4 {
+    border-style: solid;
+}
+
+#result {
+    height: 40px;
+}
