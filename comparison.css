@@ -1,11 +1,25 @@
 .row {
-    border-style: solid;
+    border-top: solid;
 }
 
 .col-md-4 {
     border-style: solid;
+    height: 100%;
 }
 
 #result {
     height: 40px;
 }
+
+.title {
+    text-align: center;
+}
+
+.headerRow {
+    font-size: 2em;
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color:silver;
+    }
