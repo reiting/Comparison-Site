@@ -22,11 +22,13 @@
         </div>
     </header>
     <main>
+        <!--created a bootstrap form-->
         <form action="comparison.html" id="productForm">
+            <!--This section has the input fields for the first product to be compared-->
             <div class="container first-product">
-
                 <h2>First Product</h2>
                 <div class="form-group">
+                    <!--used a label with for for accessibility as it makes it easier for screen readers-->
                     <label for="firstProdName">Product Name</label>
                     <input type="text" name="name" class="stored form-control" id="firstProdName" value="test1" required>
                 </div>
@@ -39,6 +41,7 @@
                     <input type="text" name="price" class="stored form-control" id="firstProdPrice" value="test1" required>
                 </div>
             </div>
+            <!--contains the input fields for the second product-->
             <div class="container second-product">
                 <h2>Second Product</h2>
                 <div class="form-group">
@@ -54,6 +57,7 @@
                     <input type="text" name="price" class="stored form-control" id="secondProdPrice" value="test2" required>
                 </div>
             </div>
+            <!--contains the input fields for the third product-->
             <div class="container third-product">
                 <h2>Third Product</h2>
                 <div class="form-group">
@@ -68,7 +72,9 @@
                     <label for="thirdProdPrice">Price</label>
                     <input type="text" name="price" class="stored form-control" id="thirdProdPrice" value="test3" required>
                 </div>
+                <!--input button-->
                 <input type="submit" id="submitButton">
+            </form>
             </div>
         </form>
     </main>
