@@ -1,18 +1,22 @@
 .row {
-    border-bottom: solid;
+    border: solid;
     overflow: hidden; 
+    text-align: center;
+}
+
+.row:hover {
+    background-color: lightblue;
 }
 
 [class*="col-"]{
     margin-bottom: -99999px;
     padding-bottom: 99999px;
 }
-
-.headerRow {
-    border-top: solid;
-}
-
-.col-md-4 {
+.row + .row {
+    border-top:0;
+ }
+ 
+.col-xs-4 {
     border-left: solid;
 }
 
@@ -22,10 +26,28 @@
 
 .title {
     text-align: center;
+    background-color: lightblue;
+    width: 100vw;
+    margin-left: -15px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .headerRow {
     font-size: 2em;
     text-align: center;
 }
+
+.better-price {
+    background-color: #FFFF66;
+}
+
+.btn-block {
+    margin-top: 1em;
+}
+
+.btn-block:hover {
+    background-color: lightblue;
+}
+
 
