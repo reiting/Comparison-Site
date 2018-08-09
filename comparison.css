@@ -5,7 +5,7 @@
 }
 
 .row:hover {
-    background-color: lightblue;
+    background-color: lightskyblue;
 }
 
 [class*="col-"]{
@@ -38,6 +38,10 @@
     text-align: center;
 }
 
+.headerRow:hover {
+    background-color: transparent;
+}
+
 .better-price {
     background-color: #FFFF66;
 }
@@ -47,7 +51,7 @@
 }
 
 .btn-block:hover {
-    background-color: lightblue;
+    background-color: lightskyblue;
 }
 
 
