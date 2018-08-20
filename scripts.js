@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
     //create empty array
     var formArray = [];
-    //if ($('body').hasClass('one')) {
     //run the following code when the submit button is clicked
-    $('#submitButton').click(function() {
+    $('#submitButton').click(function () {
+        e.preventDefault();
         //create an empty object
         var formVal = {};
         //gets the keys (attr) and the values (val) from the input fields.
@@ -17,6 +17,12 @@ $(document).ready(function() {
         formVal.descvalue = $('#firstProdDesc').val();
         formVal.pricekey = $('#firstProdPrice').attr('name');
         formVal.pricevalue = $('#firstProdPrice').val();
+
+
+       
+
+
+
 
         //does the same as above for the second product
         var secondFormVal = {};
@@ -38,6 +44,7 @@ $(document).ready(function() {
 
         //pushes formVal to the empty array
         formArray.push(formVal);
+        console.log(formVal)
         //pushes secondFormVal to the empty array
         formArray.push(secondFormVal);
         //pushes thirdFormVal to the empty array
@@ -46,9 +53,7 @@ $(document).ready(function() {
         //takes the array with all 3 objects and stringifies it to create a JSON string.
         //takes the JSON string and pushes it to local storage.
         localStorage.setItem("formArray", JSON.stringify(formArray));
+        console.log(formArray);
     })
-//} else if ($('body').hasClass('two')) {
-    //var myStorage = window.localStorage;
-//}
     //final closing tag
 })

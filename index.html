@@ -9,7 +9,7 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -24,58 +24,29 @@
     </header>
     <main>
         <!--created a bootstrap form-->
-        <form action="comparison.html" id="productForm">
+        <form action="" id="productForm">
             <!--This section has the input fields for the first product to be compared-->
             <div class="container first-product">
-                <h2>First Product</h2>
+                <h2>Product Information</h2>
                 <div class="form-group">
                     <!--used a label with for for accessibility as it makes it easier for screen readers-->
                     <label for="firstProdName">Product Name</label>
-                    <input type="text" name="name" class="stored form-control" id="firstProdName" required>
+                    <input type="text" name="name" class="stored form-control" id="firstProdName" value="name" required>
                 </div>
                 <div class="form-group">
                     <label for="firstProdDesc">Description</label>
-                    <input type="text" name="description" class="stored form-control" id="firstProdDesc" required>
+                    <input type="text" name="description" class="stored form-control" id="firstProdDesc" value="desc" required>
                 </div>
                 <div class="form-group">
                     <label for="firstProdPrice">Price</label>
-                        <input type="number" step="0.01" name="price" class="stored form-control" id="firstProdPrice" required>
+                    <span class="input-group-addon">$</span>
+                    <input type="number" step="0.01" name="price" class="stored form-control" id="firstProdPrice" value="1" required>
                 </div>
-            </div>
-            <!--contains the input fields for the second product-->
-            <div class="container second-product">
-                <h2>Second Product</h2>
-                <div class="form-group">
-                    <label for="secondProdName">Product Name</label>
-                    <input type="text" name="name" class="stored form-control" id="secondProdName" required>
-                </div>
-                <div class="form-group">
-                    <label for="secondProdDesc">Description</label>
-                    <input type="text" name="description" class="stored form-control" id="secondProdDesc" required>
-                </div>
-                <div class="form-group">
-                    <label for="secondProdPrice">Price</label>
-                    <input type="number" step="0.01" name="price" class="stored form-control" id="secondProdPrice"  required>
-                </div>
-            </div>
-            <!--contains the input fields for the third product-->
-            <div class="container third-product">
-                <h2>Third Product</h2>
-                <div class="form-group">
-                    <label for="thirdProdName">Product Name</label>
-                    <input type="text" name="name" class="stored form-control" id="thirdProdName" required>
-                </div>
-                <div class="form-group">
-                    <label for="thirdProdDesc">Description</label>
-                    <input type="text" name="description" class="stored form-control" id="thirdProdDesc" required>
-                </div>
-                <div class="form-group">
-                    <label for="thirdProdPrice">Price</label>
-                    <input type="number" step="0.01" name="currency" class="stored form-control" id="thirdProdPrice" required>
-                </div>
-                <!--input button-->
-                <input type="submit" id="submitButton">
+            </div>                            
         </form>
+        <!--input buttons-->
+        <button id="add">Add Product</button>
+        <button id="submitButton">Submit</button>
         </div>
         </form>
     </main>
