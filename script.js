@@ -1,7 +1,9 @@
 $(document).ready(function () {
+    var cloneCount = 1;
+    
     $('#add').click(function() {
         //create new product info form section on button click
-        $('.first-product').clone().appendTo('#productForm');
+        $('.first-product:first').clone().attr('id', 'form' + cloneCount++).appendTo('#productForm');
         //keep page from reloading on button click
         return false;
     })
