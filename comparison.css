@@ -54,4 +54,13 @@
     background-color: lightskyblue;
 }
 
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+trd, td {
+    padding: 15px;
+}
+
 
