@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Comparison</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container title-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-title">Product Information Entry Page</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--created a bootstrap form-->
+        <form action="" id="productForm">
+            <!--This section has the input fields for the first product to be compared-->
+            <div class="container product-info" id="form">
+                <h2>Product Information</h2>
+                <div class="form-group">
+                    <!--used a label with for for accessibility as it makes it easier for screen readers-->
+                    <label for="firstProdName">Product Name</label>
+                    <input type="text" name="name" class="stored form-control" id="firstProdName" value="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstProdDesc">Description</label>
+                    <input type="text" name="description" class="stored form-control" id="firstProdDesc" value="desc" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstProdPrice">Price</label>
+                    <span class="input-group-addon">$</span>
+                    <input type="number" step="0.01" name="price" class="stored form-control" id="firstProdPrice" value="1" required>
+                </div>
+            </div>                            
+        </form>
+        <!--input buttons-->
+        <button id="add">Add Product</button>
+        <button id="submitButton">Submit</button>
+        </div>
+        </form>
+    </main>
+</body>
+
+</html>

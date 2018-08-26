@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Headphones Comparison</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="comparison.css">
+    <script src="comparison.js"></script>
+</head>
+
+<body>
+    <header>
+    <div class="container-fluid">
+        <h1 class="title">Comparison Page</h1>
+    </header>
+        <!--this section is hard coded so it can be the header row.
+        The page can now be used for any products since it has "Product" instead of specific names.-->
+        <div class="row row-eq-height headerRow">
+            <div class="col-xs-4">Product 1</div>
+            <div class="col-xs-4">Product 2</div>
+            <div class="col-xs-4">Product 3</div>
+        </div>
+        <!--This row is for the name fields of all 3 products-->
+        <div class="row row-eq-height">
+            <div class="col-xs-4" id="name1"></div>
+            <div class="col-xs-4" id="name2"></div>
+            <div class="col-xs-4" id="name3"></div>
+        </div>
+        <!--This row is for the description fields of all 3 products-->
+        <div class="row row-eq-height">
+            <div class="col-xs-4" id="desc1"></div>
+            <div class="col-xs-4" id="desc2"></div>
+            <div class="col-xs-4" id="desc3"></div>
+        </div>
+        <!--this row is for the price field of all 3 products-->
+        <div class="row row-eq-height">
+            <div class="col-xs-4 price" id="price1"></div>
+            <div class="col-xs-4 price" id="price2"></div>
+            <div class="col-xs-4 price" id="price3"></div>
+        </div>
+        <button class = 'btn-block'>Find Lowest Value</button>
+    </div>
+</body>
+
+</html>
