@@ -8,19 +8,20 @@ $(document).ready(function() {
     //iterates through the array of objects and has a function with a counter (iterator) and the object
     $('#table-container').append('<table />');
     
+    $('<tr>').addClass('header-row').append(
+        $('<th>').text('Name'),
+        $('<th>').text('Description'),
+        $('<th>').text('Price')
+    ).appendTo('#table-container table');
+
         $.each(parsedArray, function(i, val) {
-            var row = $('<tr>').append(
+           $('<tr>').append(
                 $('<td>').text(val.name),
                 $('<td>').text(val.description),
                 $('<td>').text(val.price).addClass('price')
             ).appendTo('#table-container table');
-
-            console.log(val.name);
-            console.log(val.description);
-            console.log(val.price);
         })
 
-    
       //on button click
       $('button').click(function(){
           //set var min to be the lowest price value
