@@ -12,7 +12,7 @@ $(document).ready(function() {
             var row = $('<tr>').append(
                 $('<td>').text(val.name),
                 $('<td>').text(val.description),
-                $('<td>').text(val.price)
+                $('<td>').text(val.price).addClass('price')
             ).appendTo('#table-container table');
 
             console.log(val.name);
